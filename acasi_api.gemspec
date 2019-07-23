@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{acasi_api}
-  s.version = '0.0.4'
+  s.version = '0.0.5'
   s.licenses    = ['MIT']
   s.date = %q{2019-07-08}
   s.summary = %q{API Acasi}
