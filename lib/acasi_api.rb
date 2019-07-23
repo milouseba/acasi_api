@@ -4,7 +4,7 @@ module Acasi
 
   class WhoIs
     def self.awesome?
-      puts "ACASI IS AWESOME V 0.0.4!!"
+      puts "ACASI IS AWESOME V 0.0.5!!"
     end
   end
 
@@ -34,6 +34,16 @@ module Acasi
       method: :get,
       url: "#{Acasi.api_url}/purchase_invoices/default_category",
       headers: {params: {api_token: Acasi.api_key, purchase_invoice_id: purchase_invoice_id}}
+      ).body)
+    end
+  end
+
+  class Users
+    def self.bank_account_balance(user_id)
+      JSON.parse(RestClient::Request.execute(
+      method: :get,
+      url: "#{Acasi.api_url}/users/bank_account_balance",
+      headers: {params: {api_token: Acasi.api_key, user_id: user_id}}
       ).body)
     end
   end
