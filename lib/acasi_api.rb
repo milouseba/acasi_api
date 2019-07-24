@@ -44,7 +44,7 @@ module Acasi
       method: :get,
       url: "#{Acasi.api_url}/users/bank_account_balance",
       headers: {params: {api_token: Acasi.api_key, user_id: user_id}}
-      ).body)
+      ).body)["openstruct"]["balance"]
     end
   end
 
