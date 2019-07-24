@@ -4,7 +4,7 @@ module Acasi
 
   class WhoIs
     def self.awesome?
-      puts "ACASI IS AWESOME V 0.0.5!!"
+      puts "ACASI IS AWESOME V 0.0.6!!"
     end
   end
 
